@@ -1,3 +1,6 @@
+//! Helpers to convert iterators of results into results of collections
+//! preserving all errors, instead of just the first as `FromIterator` for
+//! `Result` does
 use std::iter::FromIterator;
 
 /// A newtype implementing FromIterator to collect into a result preserving all
